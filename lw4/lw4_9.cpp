@@ -10,7 +10,6 @@ int main()
     const int cols = 4;
     int arr[rows][cols];
 
-    // заполнение массива случайными числами
     srand(time(nullptr));
     for (int i = 0; i < rows; i++)
     {
@@ -20,7 +19,6 @@ int main()
         }
     }
 
-    // вывод массива на экран
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
