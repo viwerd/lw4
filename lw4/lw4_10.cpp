@@ -15,7 +15,6 @@ int main()
     int minVal = INT_MAX;
     int maxVal = INT_MIN;
 
-    // заполнение и вывод двумерного массива
     cout << "Matrix:\n";
     for (int i = 0; i < rows; i++)
     {
@@ -36,7 +35,6 @@ int main()
         cout << endl;
     }
 
-    // вывод результата
     cout << "Sum: " << sum << endl;
     cout << "Min value: " << minVal << endl;
     cout << "Max value: " << maxVal << endl;
