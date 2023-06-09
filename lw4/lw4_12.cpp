@@ -12,7 +12,6 @@ int main()
     int arr[ROWS][COLS];
     srand(time(NULL));
 
-    // Заполняем массив случайными числами и выводим его на экран
     cout << "Array:" << endl;
     for (int i = 0; i < ROWS; i++)
     {
@@ -24,7 +23,6 @@ int main()
         cout << endl;
     }
 
-    // Выводим элементы массива по диагонали
     cout << "Elements on diagonal:" << endl;
     for (int i = 0; i < ROWS; i++)
     {
