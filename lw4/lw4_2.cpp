@@ -1,6 +1,6 @@
 #include <iostream>
-#include <stdlib.h> // Для команд srand() и rand()
-#include <time.h> // Для time()
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
@@ -12,7 +12,6 @@ int main()
 
     srand(time(0));
 
-    // Сначала генерируем 10 случайных чисел от 0 до 999
     for (int i = 0; i < arraY_lenght; i++)
     {
         arr[i] = rand() % 1000;
@@ -22,23 +21,22 @@ int main()
     int min = 999999;
     int max = 0;
 
-    // С помощью цикла находим соответственно сумму, минунимум и максимум
     for (int i = 0; i < arraY_lenght; i++)
     {
         sum += arr[i];
-        if (arr[i] < min) // Если min больше числа в массиве, то в min записываем это самое число
+        if (arr[i] < min)
         {
             min = arr[i];
         }
-        if (arr[i] > max) // Если max меньше числа в массиве, то в max записсываем это самое число
+        if (arr[i] > max)
         {
             max = arr[i];
         }
     }
 
-    cout << "Сумма: " << sum << endl;
-    cout << "Минимум: " << min << endl;
-    cout << "Максимум: " << max << endl;
+    cout << "РЎСѓРјРјР°: " << sum << endl;
+    cout << "РњРёРЅРёРјСѓРј: " << min << endl;
+    cout << "РњР°РєСЃРёРјСѓРј: " << max << endl;
 
     return 0;
 }
