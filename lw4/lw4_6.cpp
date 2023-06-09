@@ -18,7 +18,6 @@ int main() {
     int arr2[size_2];
     int merged[size_1 + size_2];
 
-    // Заполнение массивов случайными числами
     srand(time(nullptr));
     for (int i = 0; i < size_1; i++) {
         arr1[i] = rand() % 10;
@@ -27,7 +26,6 @@ int main() {
         arr2[i] = rand() % 10;
     }
 
-    // Объединение массивов
     for (int i = 0; i < size_1; i++) {
         merged[i] = arr1[i];
     }
@@ -35,7 +33,6 @@ int main() {
         merged[size_1 + i] = arr2[i];
     }
 
-    // Вывод результирующего массива на экран
     cout << "Merged array: ";
     printArray(merged, size_1 + size_2);
 
