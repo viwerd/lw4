@@ -14,7 +14,7 @@ void fillArray(int arr[][COLS], int rows, int cols)
     {
         for(int j = 0; j < cols; j++)
         {
-            arr[i][j] = rand() % 10 + 1; // случайные числа от 1 до 10
+            arr[i][j] = rand() % 10 + 1;
         }
     }
 }
